@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Dice Game</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Lobster" rel="stylesheet" />
+</head>
+<body>
+
+    <div class="container">
+        <h2>Dice Game 🎲</h2>
+
+        <div class="setup">
+            <input type="text" id="player1Name" placeholder="Enter Player 1 Name">
+            <input type="text" id="player2Name" placeholder="Enter Player 2 Name">
+            <input type="number" id="rounds" placeholder="Enter Number of Rounds" min="1">
+            <button class="btn start-btn" onclick="startGame()">Start Game</button>
+        </div>
+
+        <div class="game-area hidden">
+            <h3 id="round-info">Round 1</h3>
+
+            <div class="players">
+                <div class="dice1">
+                    <p id="p1-name">Player 1</p>
+                    <img class="img1" src="images/dice6.png" />
+                    <button class="btn roll-btn" onclick="rollDice(1)">Roll Dice</button>
+                </div>
+
+                <div class="dice2">
+                    <p id="p2-name">Player 2</p>
+                    <img class="img2" src="images/dice6.png" />
+                    <button class="btn roll-btn" onclick="rollDice(2)">Roll Dice</button>
+                </div>
+            </div>
+
+            <h3 id="result">Let's see who wins! 🎲</h3>
+
+            <div class="scoreboard">
+                <p><span id="player1Score">0</span> - <span id="player2Score">0</span></p>
+            </div>
+
+            <button class="btn hidden restart-btn" onclick="restartGame()">Restart Game</button>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
