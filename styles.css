@@ -1,0 +1,116 @@
+body {
+  background-color: #393E46;
+  text-align: center;
+  font-family: 'Indie Flower', cursive;
+}
+
+.container {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+}
+
+.setup {
+  margin-top: 30px;
+}
+
+input {
+  padding: 10px;
+  margin: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+  text-align: center;
+}
+
+.players {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  margin-top: 30px;
+}
+
+.dice1, .dice2 {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h2 {
+  margin: 30px;
+  font-family: 'Lobster', cursive;
+  text-shadow: 5px 0 #232931;
+  font-size: 5rem;
+  color: #4ECCA3;
+}
+
+h3 {
+  font-size: 2rem;
+  margin-top: 20px;
+  color: #EEEEEE;
+}
+
+p {
+  font-size: 2rem;
+  color: #4ECCA3;
+  font-family: 'Indie Flower', cursive;
+  margin-bottom: 15px;
+}
+
+img {
+  width: 150px;
+}
+
+.btn {
+  background-color: #4ECCA3;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 15px;
+  width: 80%;
+  max-width: 200px;
+}
+
+.btn:hover {
+  background-color: #3BA07E;
+  transform: scale(1.1);
+}
+
+/* Disabled Roll Button - 🚫 Restricted Cursor */
+.roll-btn.disabled {
+  background-color: #666; /* Greyed out */
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.hidden {
+  display: none;
+}
+
+.scoreboard {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 20px;
+  color: white;
+}
+
+.restart-btn {
+  background-color: #ff4b5c;
+}
+
+.restart-btn:hover {
+  background-color: #e43f51;
+}
+
+footer {
+  margin-top: 5%;
+  color: #EEEEEE;
+  font-size: 1.2rem;
+}
